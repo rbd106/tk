@@ -53,3 +53,8 @@ module.exports = {
   ],
 };
 ```
+
+:::note
+
+ Note body
+:::
