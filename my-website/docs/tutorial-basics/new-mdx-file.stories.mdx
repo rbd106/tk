@@ -1,164 +1,33 @@
 <!--
 title: Introduction page
 -->
+:::note
 
-import ExpandMoreIcon from "@material-ui/icons/ExpandMore";
-import Accordion from "@material-ui/core/Accordion";
-import AccordionDetails from "@material-ui/core/AccordionDetails";
-import Typography from "@material-ui/core/Typography";
-import AccordionSummary from "@material-ui/core/AccordionSummary";
-import useBaseUrl from '@docusaurus/useBaseUrl';
+Some **content** with _markdown_ `syntax`. Check [this `api`](#).
 
+:::
 
-export default function App() {
-return (
-<div stlye={{}}>
-<p>nferX platform can enable data science-driven decision-making inputs, be it for biopharmaceutical lifecycle management across conventionally siloed therapeutic areas or connecting clinical pathophysiology to molecular profiling in the rapidly evolving pandemic landscape. nferX platform makes the highly unstructured biomedical knowledge computable and supports the seamless visual triangulation with statistical inference from diverse structured databases. The nferX platform will accelerate and amplify the research potential of subject-matter experts as well as non-experts across the life science ecosystem. A summary of the apps is listed here:</p>
-      <h3>Knowledge Synthesis</h3>
-      <Accordion style={{ width: 1000}} >
-        <AccordionSummary
-          expandIcon={<ExpandMoreIcon />}
-          aria-controls="panel1a-content"
-        >
-          <Typography
-            style={{
-              fontWeight: 10,
-            }}
-          >
-          Explore concept associations within unstructured texts and triangulate with structured datasets
-          </Typography>
-        </AccordionSummary>
-        <AccordionDetails>
-          <div className="icon-links">
-           <img alt="signals-features" src={useBaseUrl('/img/signals/features-overview-001.png')} width="600"/> 
-          <a href={"/docs/signals/about"} style={{ marginRight: "300px" }}> Signals </a>
-        </div>
-        </AccordionDetails>
-      </Accordion>
-      <Accordion style={{ width: 1000}}>
-        <AccordionSummary
-          expandIcon={<ExpandMoreIcon />}
-          aria-controls="panel1a-content"
-        >
-          <Typography
-            style={{
-              fontWeight: 10,
-            }}
-         >
-            Retrieve contextually relevant documents based on search terms/ phrases
-          </Typography>
-        </AccordionSummary>
-        <AccordionDetails>
-          <div className="links">
-          <img alt="Documents Overview" src={useBaseUrl('/img/documents/ug-docspage.png')} width="600" />
-            <a href={"/docs/documents/index"} style={{ marginRight: "100px" }}> Documents... </a>
-        </div>
-        </AccordionDetails>
-      </Accordion>
-      <Accordion style={{ width: 1000}}>
-        <AccordionSummary
-          expandIcon={<ExpandMoreIcon />}
-          aria-controls="panel1a-content"
-        >
-          <Typography
-            style={{
-              fontWeight: 10,
-            }}
-          >
-           Identify concepts or feature that maximally discriminate or associate a given pair of concepts
-          </Typography>
-        </AccordionSummary>
-        <AccordionDetails>
-          <div className="links">
-          <img alt="Overview" src={useBaseUrl('/img/discriminator/ug-discriminator-1.png')} width="600" />
-          <a href={"/docs/discriminator-lab/index"} style={{ marginRight: "100px" }}> Discriminator... </a>
-        </div>
-        </AccordionDetails>
-      </Accordion>
-      <div stlye={{}}>
-         
-      <p> </p>
-      <h3>Molecular Analytics</h3>
-      <Accordion style={{ width: 1000}}>
-        <AccordionSummary
-          expandIcon={<ExpandMoreIcon />}
-          aria-controls="panel1a-content"
-        >
-          <Typography
-            style={{
-              fontWeight: 10,
-            }}
-          >
-           To identify studies that have high expression or high differential expression of specific genes
-          </Typography>
-        </AccordionSummary>
-        <AccordionDetails>
-          <div className="links">
-          <a href="https://preview.nferx.com/dv/202103/rna_lab"> RNA Explorer</a>
-        </div>
-        </AccordionDetails>
-      </Accordion>
-      <Accordion style={{ width: 1000}}>
-        <AccordionSummary
-          expandIcon={<ExpandMoreIcon />}
-          aria-controls="panel1a-content"
-        >
-          <Typography
-            style={{
-              fontWeight: 10,
-            }}
-         >
-            Overlay contextual associations from literature on to genetic associations captured by structured datasets
-          </Typography>
-        </AccordionSummary>
-        <AccordionDetails>
-          <div className="links">
-            <a href="https://preview.nferx.com/dv/202103/human-genetics-lab/?type=genes"> Human Genetics... </a>
-        </div>
-        </AccordionDetails>    
-      </Accordion>
-      
-</div>
-<p> </p>
-      <h3>Real World Evidence</h3>
-      <Accordion style={{ width: 1000}}>
-        <AccordionSummary
-          expandIcon={<ExpandMoreIcon />}
-          aria-controls="panel1a-content"
-        >
-<Typography
-            style={{
-              fontWeight: 10,
-            }}
-          >
-Identify significant adverse events that are specifically associated with FDA approved drugs
-          </Typography>
-        </AccordionSummary>
-        <AccordionDetails>
-          <div className="links">
-            <a href="https://preview.nferx.com/dv/202103/faers_mobile/"> Adverse Events... </a>
-        </div>
-        </AccordionDetails>
-      </Accordion>
-      <Accordion style={{ width: 1000}}>
-        <AccordionSummary
-          expandIcon={<ExpandMoreIcon />}
-          aria-controls="panel1a-content"
-        >
-          <Typography
-            style={{
-              fontWeight: 10,
-            }}
-         >
-            Identify similarities and distinctions in adverse events reported for a pair of marketed drugs. Can also assess combinations of or sets of drugs using inclusion/exclusion criteria.
-          </Typography>
-        </AccordionSummary>
-        <AccordionDetails>
-          <div className="links">
-            <a href="https://preview.nferx.com/dv/202103/adverse-events-lab/drug-discriminator/"> Drug Discriminator </a>
-        </div>
-        </AccordionDetails>
-      </Accordion>
-</div>
-);
-}
+:::tip
+
+Some **content** with _markdown_ `syntax`. Check [this `api`](#).
+
+:::
+
+:::info
+
+Some **content** with _markdown_ `syntax`. Check [this `api`](#).
+
+:::
+
+:::caution
+
+Some **content** with _markdown_ `syntax`. Check [this `api`](#).
+
+:::
+
+:::danger
+
+Some **content** with _markdown_ `syntax`. Check [this `api`](#).
+
+:::
+
