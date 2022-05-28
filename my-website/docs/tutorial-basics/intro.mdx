@@ -1,0 +1,62 @@
+---
+title: nferX Overview
+desc: Learn about different nferX apps and their capabilities
+sidebar_label: Introduction
+---
+import ExpandMoreIcon from "@material-ui/icons/ExpandMore";
+import Accordion from "@material-ui/core/Accordion";
+import AccordionDetails from "@material-ui/core/AccordionDetails";
+import Typography from "@material-ui/core/Typography";
+import AccordionSummary from "@material-ui/core/AccordionSummary";
+
+import useBaseUrl from '@docusaurus/useBaseUrl';
+
+
+export default function App() {
+return (
+<div stlye={{}}>
+<p>nferX platform can enable data science-driven decision-making inputs, be it for biopharmaceutical lifecycle management across conventionally siloed therapeutic areas or connecting clinical pathophysiology to molecular profiling in the rapidly evolving pandemic landscape. nferX platform makes the highly unstructured biomedical knowledge computable and supports the seamless visual triangulation with statistical inference from diverse structured databases. The nferX platform will accelerate and amplify the research potential of subject-matter experts as well as non-experts across the life science ecosystem. A summary of the apps is listed here:</p>
+      <h3>Knowledge Synthesis</h3>
+      <Accordion style={{ width: 1000}} >
+        <AccordionSummary
+          expandIcon={<ExpandMoreIcon />}
+          aria-controls="panel1a-content"
+        >
+          <Typography
+            style={{
+              fontWeight: 10,
+            }}
+          >
+          Explore concept associations within unstructured texts and triangulate with structured datasets
+          </Typography>
+        </AccordionSummary>
+        <AccordionDetails>
+          <div className="icon-links">
+           <img alt="signals-features" src={useBaseUrl('/img/docusaurus.png')} width="600"/> 
+          <a href={"/docs/tutorial-basics/congratulations"} style={{ marginRight: "300px" }}> Signals </a>
+        </div>
+        </AccordionDetails>
+      </Accordion>
+      <Accordion style={{ width: 1000}}>
+        <AccordionSummary
+          expandIcon={<ExpandMoreIcon />}
+          aria-controls="panel1a-content"
+        >
+          <Typography
+            style={{
+              fontWeight: 10,
+            }}
+         >
+            Retrieve contextually relevant documents based on search terms/ phrases
+          </Typography>
+        </AccordionSummary>
+        <AccordionDetails>
+          <div className="links">
+          <img alt="Documents Overview" src={useBaseUrl('/img/docusaurus.png')} width="600" />
+            <a href={"/docs/tutorial-basics/congratulations"} style={{ marginRight: "100px" }}> Documents... </a>
+        </div>
+        </AccordionDetails>
+      </Accordion>
+      </div>
+);
+}
