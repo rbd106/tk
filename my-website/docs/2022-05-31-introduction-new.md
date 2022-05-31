@@ -1,6 +1,6 @@
 ---
 title: "Introduction new "
-slug: /docs/tutorial-basics/may31st
+slug: my-website/docs/tutorial-basics/may31
 ---
 ![]()
 
