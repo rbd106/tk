@@ -1,6 +1,6 @@
 ---
 title: Tuesday doc
-slug: /my-website/docs
+slug: my-website/docs/tue.md
 ---
 ## This is the heading 2
 
