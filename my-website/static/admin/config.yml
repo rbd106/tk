@@ -1,0 +1,57 @@
+backend:
+  name: github
+  branch: main
+  repo: rbd106/tk
+  
+publish_mode: editorial_workflow
+
+local_backend: true
+
+# These lines should *not* be indented
+media_folder: "static/images/uploads" # Media files will be stored in the repo under static/images/uploads
+public_folder: "/img/" # The src attribute for uploaded media will begin with /images/uploads
+
+collections:
+- name: blog
+  label: "blog"
+  folder: blog
+  identifier_field: title
+  extension: md
+  widget: "list"
+  create: true
+  slug: "{{year}}-{{month}}-{{day}}-{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
+  fields:
+    - { name: title, label: Title, widget: string }
+    - { name: body, label: Body, widget: markdown }
+    - { name: slug, label: Slug, widget: string }
+
+- name: docs
+  label: "docs"
+  folder: my-website/docs
+  identifier_field: title
+  extension: md
+  widget: "list"
+  create: true
+  slug: "{{year}}-{{month}}-{{day}}-{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
+  fields:
+    - { name: title, label: Title, widget: string }
+    - { name: body, label: Body, widget: markdown }
+    - { name: slug, label: Slug, widget: string }
+
+- name: stories
+  label: "mdx"
+  folder: my-website/docs/tutorial-basics
+  identifier_field: title
+  extension: mdx
+  create: true
+  slug: '{{title}}.stories' # Filename template, e.g., title.stories.mdx
+  format: yaml-frontmatter
+  frontmatter_delimiter: ['<!--', '-->']
+  fields: # The fields for each document, usually in front matter
+    - { label: 'Title', name: 'title', widget: string }
+    - { label: 'Body', name: 'body', widget: 'markdown', modes: ['raw'] }
+ 
+    
+    
+    
+        
